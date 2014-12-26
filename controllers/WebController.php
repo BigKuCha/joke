@@ -23,6 +23,7 @@ namespace app\controllers;
 
 use Yii;
 use yii\web\Controller;
+use kartik\widgets\ActiveForm;
 
 class WebController extends Controller
 {
