@@ -23,8 +23,7 @@ $this->title = '首页';
             'clientOptions' => [
                 'interval' => 2000
             ]
-        ]) ?>
-        <div class="row">&nbsp;</div>
+        ]) ?><br>
         <div class="row">
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
@@ -61,7 +60,11 @@ $this->title = '首页';
         <div class="panel panel-default">
             <div class="panel-heading"><span class="glyphicon glyphicon-star"></span> Star</div>
             <div class="panel-body">
-                Panel content
+                <ul class="index-list">
+                    <li>
+                        MingXian
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -93,5 +96,11 @@ $this->title = '首页';
                 ],
             ],
         ]) ?>
+        <br>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                Basic panel example
+            </div>
+        </div>
     </div>
 </div>
