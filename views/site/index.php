@@ -6,11 +6,11 @@ $this->title = '首页';
     <div class="col-lg-9">
         <?= \yii\bootstrap\Carousel::widget([
             'items' => [
-                ['content' => '<img src="images/1.png"/>'],
-                ['content' => '<img src="images/2.jpg"/>'],
-                ['content' => '<img src="images/3.png"/>'],
-                ['content' => '<img src="images/4.png"/>'],
-                ['content' => '<img src="images/5.png"/>'],
+                ['content' => '<img src="/images/1.png"/>'],
+                ['content' => '<img src="/images/2.jpg"/>'],
+                ['content' => '<img src="/images/3.png"/>'],
+                ['content' => '<img src="/images/4.png"/>'],
+                ['content' => '<img src="/images/5.png"/>'],
             ],
             'options' => [
                 'class' => 'slide',
