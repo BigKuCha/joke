@@ -47,12 +47,27 @@ AppAsset::register($this);
                     '<li class="dropdown-header">Dropdown Header</li>',
                 ]
             ],
-            Yii::$app->user->isGuest ?
-                ['label' => '登录', 'url' => ['/site/login']] :
-                ['label' => '退出 (' . Yii::$app->user->identity->username . ')',
-                    'url' => ['/site/logout'],
-                    'linkOptions' => ['data-method' => 'post']],
         ],
+    ]);
+    echo Nav::widget([
+        'options' => ['class' => 'navbar-nav navbar-right'],
+        'items' => [
+            Yii::$app->user->isGuest ?
+                [
+                    'label' => '登录',
+                    'url' => ['site/login']
+                ] :
+                [
+                    'format' => 'html',
+                    'label' => Yii::$app->user->identity->username,
+                    'items' => [
+                        ['label' => '个人中心', 'url' => ['user/info']],
+                        ['label' => '站内信', 'url' => ['user/email']],
+                        ['label' => '退出', 'url' => ['site/logout'], 'linkOptions' => ['data-method' => 'post']]
+                    ]
+                ]
+
+        ]
     ]);
     NavBar::end();
     ?>
@@ -69,7 +84,7 @@ AppAsset::register($this);
     <div class="container">
         <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
 
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="pull-right">宇宙科技技术有限公司</p>
     </div>
 </footer>
 
