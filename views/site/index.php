@@ -58,10 +58,10 @@ $this->title = '首页';
         </div>
 
         <div class="panel panel-default">
-            <div class="panel-heading"><span class="glyphicon glyphicon-star"></span> Star</div>
+            <div class="panel-heading"><span class="glyphicon glyphicon-star"></span> 今日要闻 <small class="pull-right"><a href="#">查看更多</a></small></div>
             <div class="panel-body">
                 <ul class="list-group">
-                    <li class="list-group-item">亚航一架印尼飞新加坡客机失联 <small> 作者: <em>段超</em></small> <span class="pull-right">2014-12-12</span></li>
+                    <li class="list-group-item">亚航一架印尼飞新加坡客机失联 <small> <em class="text-success">作者: 段超</em></small> <span class="pull-right">2014-12-12</span></li>
                     <li class="list-group-item">周鸿祎开骂被称绝望的咆哮<span class="pull-right">2014-02-12</span></li>
                     <li class="list-group-item">媒体：习近平治国理政“十件大事”<span class="pull-right">2014-11-09</span></li>
                     <li class="list-group-item">风波中的弹幕视频网站：爱奇艺等集体起诉哔哩哔哩<span class="pull-right">2014-10-23</span></li>
