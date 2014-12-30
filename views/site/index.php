@@ -27,30 +27,30 @@ $this->title = '首页';
         <div class="row">
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img data-src="holder.js/300x300" alt="...">
+                    <img src="images/sj.jpg" alt="...">
                     <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <p>...</p>
+                        <h3>深圳突施限牌令</h3>
+                        <p>万恶的“忙死DAY”如约而至，当大伙满心欢喜地期待2015年元旦佳节来临之际，一则“深圳正式实施汽车限购”的重磅公告瞬间引爆了整个车市...</p>
                         <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img data-src="holder.js/300x300" alt="...">
+                    <img src="images/ipad.jpg" alt="...">
                     <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <p>...</p>
+                        <h3>被逼上绝路的ipad</h3>
+                        <p>iPhone 6的成功其实是以牺牲iPad平板电脑为代价的，此种情况下，苹果势必会调整iPad的战略决策。</p>
                         <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img data-src="holder.js/300x300" alt="...">
+                    <img src="images/zhubo.jpg" alt="...">
                     <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <p>...</p>
+                        <h3>网络主播的真实生活</h3>
+                        <p>小雪，山西太原人，从小和爷爷奶奶在一起生活的她，现在是虎牙90998一名职业网络游戏女主播。在大家看来，这个职业让人更多联想到的关键词是甜美、娇声细语，但小雪其实是一个颇具男孩儿性格的90后女孩。</p>
                         <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
                     </div>
                 </div>
@@ -100,9 +100,34 @@ $this->title = '首页';
         ]) ?>
         <br>
         <div class="panel panel-default">
+            <div class="panel-heading"><i class="glyphicon glyphicon-comment"></i>&nbsp;热门话题</div>
             <div class="panel-body">
-                Basic panel example
+                <ul class="post-list">
+                    <li>
+                        <a href="#">Cras justo odio</a>
+                    </li>
+                    <li>
+                        Cras justo odio
+                    </li>
+                    <li>
+                        Cras justo odio
+                    </li>
+                </ul>
             </div>
         </div>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <span class="badge">14</span>
+                Cras justo odio
+            </li>
+            <li class="list-group-item">
+                <span class="badge">14</span>
+                Cras justo odio
+            </li>
+            <li class="list-group-item">
+                <span class="badge">14</span>
+                Cras justo odio
+            </li>
+        </ul>
     </div>
 </div>
