@@ -91,7 +91,7 @@ $this->title = '首页';
                             'content' => '这里全都是美女',
                         ],
                         [
-                            'label' => '帅哥',
+                            'label' => '帅哥哦',
                             'content' => '^_^',
                         ],
                     ],
