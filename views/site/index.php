@@ -101,19 +101,17 @@ $this->title = '首页';
         <br>
         <div class="panel panel-default">
             <div class="panel-heading"><i class="glyphicon glyphicon-comment"></i>&nbsp;热门话题</div>
-            <div class="panel-body">
-                <ul class="post-list">
-                    <li>
-                        <a href="#">Cras justo odio</a>
-                    </li>
-                    <li>
-                        Cras justo odio
-                    </li>
-                    <li>
-                        Cras justo odio
-                    </li>
-                </ul>
-            </div>
+            <ul class="list-group">
+                <li>
+                    <a href="#">耐高温，防渗漏</a>
+                </li>
+                <li>
+                    优质选材，使用放心
+                </li>
+                <li>
+                    美观适用，不宜变形
+                </li>
+            </ul>
         </div>
         <ul class="list-group">
             <li class="list-group-item">

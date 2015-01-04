@@ -93,3 +93,7 @@ a.desc:after {
 .panel ul {
     list-style: outside none none;
 }
+
+.panel .list-group li {
+    padding-left:8px ;line-height: 2.2em; border-bottom: #eee dashed 1px;
+}
