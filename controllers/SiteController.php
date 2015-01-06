@@ -92,4 +92,24 @@ class SiteController extends WebController
     {
         return $this->render('about');
     }
+
+    /**
+     * 邮件发送实例
+     */
+    public function actionMail()
+    {
+        $info = [
+            'name' => 'Joe',
+            'age' => 19,
+        ];
+        $img = Yii::getAlias('@app/') . 'web/images/1.png';
+        Yii::$app->mailer
+            ->compose('test/html', ['info' => $info])
+            ->setFrom([
+                '289209336@qq.com' => '大裤衩子',
+            ])
+            ->setTo('duanchao5200@126.com')
+            ->setSubject('我是主题')->attach($img, ['fileName' => '愤怒的小鸟.png'])
+            ->send();
+    }
 }
