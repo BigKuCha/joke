@@ -15,17 +15,17 @@ class SiteController extends WebController
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout'],
+                'only'  => ['logout'],
                 'rules' => [
                     [
                         'actions' => ['logout'],
-                        'allow' => true,
-                        'roles' => ['@'],
+                        'allow'   => true,
+                        'roles'   => ['@'],
                     ],
                 ],
             ],
-            'verbs' => [
-                'class' => VerbFilter::className(),
+            'verbs'  => [
+                'class'   => VerbFilter::className(),
                 'actions' => [
                     'logout' => ['post'],
                 ],
@@ -36,11 +36,11 @@ class SiteController extends WebController
     public function actions()
     {
         return [
-            'error' => [
+            'error'   => [
                 'class' => 'yii\web\ErrorAction',
             ],
             'captcha' => [
-                'class' => 'yii\captcha\CaptchaAction',
+                'class'           => 'yii\captcha\CaptchaAction',
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
         ];
@@ -100,7 +100,7 @@ class SiteController extends WebController
     {
         $info = [
             'name' => 'Joe',
-            'age' => 19,
+            'age'  => 19,
         ];
         $img = Yii::getAlias('@app/') . 'web/images/1.png';
         Yii::$app->mailer
@@ -111,5 +111,10 @@ class SiteController extends WebController
             ->setTo('duanchao5200@126.com')
             ->setSubject('我是主题')->attach($img, ['fileName' => '愤怒的小鸟.png'])
             ->send();
+    }
+
+    public function actionEditor()
+    {
+        return $this->render('editor', []);
     }
 }
