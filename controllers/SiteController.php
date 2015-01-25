@@ -112,9 +112,4 @@ class SiteController extends WebController
             ->setSubject('我是主题')->attach($img, ['fileName' => '愤怒的小鸟.png'])
             ->send();
     }
-
-    public function actionEditor()
-    {
-        return $this->render('editor', []);
-    }
 }
