@@ -28,9 +28,6 @@ use kartik\widgets\ActiveForm;
 <?php $form = ActiveForm::begin() ?>
 
 <?= $form->field($model, 'username')->widget(Ueditor::className(), [
-//    'model'      => $model,
-//    'attribute'  => 'password',
-//    'name'       => 'customName',
     'value'      => 'content',
     'style'      => 'width:100%;height:400px',
     'renderTag'  => true,
